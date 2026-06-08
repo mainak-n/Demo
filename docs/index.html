@@ -3,98 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mainak Nath | Product & AI Portfolio</title>
-  <link rel="stylesheet" crossorigin href="/Demo/assets/style-BLLNt8WL.css">
+    <title>Mainak Nath | Product & System Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <a href="index.html" class="brand">Mainak<span>Nath</span></a>
-        <nav class="nav-links">
-            <a href="index.html" class="active">Work</a>
-            <a href="asin-productivity.html">ASIN Productivity</a>
-            <a href="sigma.html">SIGMA</a>
-            <a href="availability-genai.html">GenAI Ops</a>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="brand">Mainak<span>Nath</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Work</a>
+                <a href="profile.html">Profile</a>
+                <a href="asin-productivity.html">ASIN Productivity</a>
+                <a href="sigma.html">SIGMA</a>
+                <a href="availability-genai.html">GenAI Ops</a>
+            </nav>
+        </div>
     </header>
 
     <div class="hero">
-        <h1>Tech Product & AI Strategy</h1>
-        <p>Specializing in GenAI workflows, ML-driven selection, and operational scale.</p>
-        <a href="#projects" class="btn">View Case Studies</a>
+        <h1>AI-Native Product & Enterprise Data Systems</h1>
+        <p><strong>Product Manager | 6+ years product & engineering</strong></p>
+        <p class="hero-subtitle">I translate LLM and ML model capabilities into agentic, autonomous workflows that reason over enterprise data and act through downstream systems. Currently optimizing supply-chain networks at Amazon.</p>
+        <div class="contact-meta">
+            <span>Bengaluru, India</span>
+            <span><a href="mailto:dn.mainak@gmail.com">dn.mainak@gmail.com</a></span>
+            <span>+91 8974730146</span>
+            <span><a href="https://linkedin.com/in/mainak-nath" target="_blank">LinkedIn</a></span>
+            <span><a href="https://github.com/mainak-n" target="_blank">GitHub</a></span>
+        </div>
     </div>
 
     <main class="container">
         
-        <h2 id="projects">Featured Projects</h2>
-        <div class="grid">
-            
-            <div class="card">
-                <h3>ASIN Productivity (Branded)</h3>
-                <p>Strategic program driving catalog efficiency for Worldwide Head Brands by eliminating unproductive ASINs.</p>
+        <h2 style="margin-bottom:15px; letter-spacing: -0.5px;">Core Production Repositories</h2>
+        <div class="card" style="padding:20px;">
+            <div class="tabs-header">
+                <button class="tab-link active" onclick="switchTab(event, 'bot-panel')">AI Knowledge Assistant</button>
+                <button class="tab-link" onclick="switchTab(event, 'copilot-panel')">Contoso Copilot Agent</button>
+                <button class="tab-link" onclick="switchTab(event, 'causal-panel')">Causal Inference Portal</button>
+            </div>
+
+            <div id="bot-panel" class="tab-panel active">
                 <div class="tags">
-                    <span class="tag">Catalog Health</span>
-                    <span class="tag">$5B GMS Impact</span>
-                    <span class="tag">Gap Analysis</span>
+                    <span class="tag">Google Gemini AI</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">FAISS</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Python 3.11</span>
+                    <span class="tag highlight">Render Web Service</span>
                 </div>
-                <div class="card-footer">
-                    <a href="asin-productivity.html" class="btn">View Case Study</a>
+                <h3>Cloud-Native Document Reasoning Bot (Telegram Integration)</h3>
+                <p>An intelligent, context-aware routing assistant that transforms static organizational PDFs into live search environments. Builds vector lookup structures directly on the runtime instance upon startup initialization.</p>
+                
+                <div class="responsive-asset-container">
+                    <div class="responsive-img-wrapper">
+                        <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:5px;">SYSTEM ARCHITECTURE</p>
+                        <img src="https://raw.githubusercontent.com/mainak-n/rag-project/main/public/architecture.jpg" alt="System Architecture">
+                    </div>
+                    <div class="responsive-img-wrapper">
+                        <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:5px;">SCAN TO CHAT</p>
+                        <img src="https://raw.githubusercontent.com/mainak-n/rag-project/main/public/Instagram_bot.jpeg" alt="Bot QR Code">
+                    </div>
+                </div>
+
+                <h4>Knowledge Base Capabilities</h4>
+                <p>Pre-trained on modular operational records including Leave Policies, SOP compliance layouts, and the comprehensive <strong>M365 Agentic API Developer Guide</strong>.</p>
+                
+                <div style="margin-top:15px;">
+                    <span style="font-size:0.85rem; font-weight:700; color:var(--accent-blue);">Live Telegram Handles: @test_rag_mainak_bot</span>
                 </div>
             </div>
 
-            <div class="card">
-                <h3>SIGMA (Unbranded Intelligence)</h3>
-                <p>Competitive intelligence engine identifying selection gaps against emerging competitors (Temu, Shein) using Visual AI.</p>
+            <div id="copilot-panel" class="tab-panel">
                 <div class="tags">
-                    <span class="tag">Computer Vision</span>
-                    <span class="tag">Competitor Scraping</span>
-                    <span class="tag">$18.7B Opportunity</span>
+                    <span class="tag">M365 Platform</span>
+                    <span class="tag">Graph Connectors</span>
+                    <span class="tag">OpenAPI Plugins</span>
+                    <span class="tag">SAP/Dynamics ERP</span>
                 </div>
-                <div class="card-footer">
-                    <a href="sigma.html" class="btn">View Case Study</a>
+                <h3>Contoso Sales Proposal Agent</h3>
+                <p>Implements high-fidelity workflow loops inside Microsoft 365, bypassing traditional cross-application friction to streamline proposal assembly directly within workspace UI interfaces.</p>
+                
+                <div class="responsive-img-wrapper" style="margin:20px 0;">
+                    <img src="https://raw.githubusercontent.com/mainak-n/demo-copilot/main/public/architecture.png" alt="M365 Extensibility Flow">
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Target Variable Tracked</th><th>Legacy State Baseline</th><th>Optimized Agent State</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Context Workspace Swapping</td><td>5-8 core operational applications/day</td><td><strong>1-2 execution windows</strong></td></tr>
+                            <tr><td>Production Time Allocation</td><td>4-6 engineering hours</td><td><strong>~1 hour</strong></td></tr>
+                            <tr><td>Throughput Capacity Scale</td><td>40 documentation sets / rep</td><td><strong>~160 sets / rep (Projected)</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top:20px;">
+                    <a href="https://mainak-demo-copilot.netlify.app/" target="_blank" class="btn">Launch Primary GenAI System</a>
+                    <a href="https://mainak-n.github.io/demo-copilot/" target="_blank" class="btn btn-secondary">Static Mirror</a>
                 </div>
             </div>
 
-            <div class="card">
-                <h3>Availability & GenAI Ops</h3>
-                <p>GenAI-led workflow design to fix availability at scale, reducing manual intervention for 95k+ incidents.</p>
+            <div id="causal-panel" class="tab-panel">
                 <div class="tags">
-                    <span class="tag">GenAI Strategy</span>
-                    <span class="tag">Signal Logic</span>
-                    <span class="tag">$75M Revenue</span>
+                    <span class="tag">EconML (Microsoft)</span>
+                    <span class="tag">Streamlit Runtime</span>
+                    <span class="tag">Double ML</span>
+                    <span class="tag">Statsmodels</span>
                 </div>
-                <div class="card-footer">
-                    <a href="availability-genai.html" class="btn">View Case Study</a>
+                <h3>No-Code Strategic Causal Impact Portal</h3>
+                <p>Isolates true program impact from confounding observational datasets. The terminal dynamically adjusts execution routing logic based on temporal parameters provided during file initialization.</p>
+                
+                <div class="card" style="background:#F8F9FA; margin:20px 0;">
+                    <h4>Mathematical Framework (Time Logic Enabled)</h4>
+                    <p>Calculates intervention variances using the Difference-in-Differences panel regression methodology:</p>
+                    <pre class="math-equation">$$Y = \beta_0 + \beta_1(\text{Treat}) + \beta_2(\text{Post}) + \delta(\text{Treat} \times \text{Post}) + \gamma X + \epsilon$$</pre>
+                    <p style="font-size:0.8rem; margin-top:5px;">Where $\delta$ represents the true mathematical coefficient estimation corrected for omitted context factors.</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Operational Configuration</th><th>Statistical Pipeline Routine</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Cross-Sectional Framework (Time Logic OFF)</td><td>Executes Robinson's Two-Stage Procedure utilizing causal random forests to isolate residual treatment effects.</td></tr>
+                            <tr><td>Panel Framework (Time Logic ON)</td><td>Builds an OLS trend framework checking linear baseline constraints dynamically across defined cohorts.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top:20px;">
+                    <a href="https://causal-inference-ml.streamlit.app/" target="_blank" class="btn">Launch Live Analytics Portal</a>
                 </div>
             </div>
-
         </div>
 
-        <h2>Technical Competencies</h2>
-        <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 15px;">
-            <div class="card" style="padding: 15px; text-align: center; background: #f8f9fa;">
-                <strong>GenAI Strategy</strong>
-                <span style="font-size: 12px; color: #666;">PRFAQ, Use Cases</span>
+        <h2 style="margin:40px 0 20px 0; letter-spacing: -0.5px;">Career Timeline</h2>
+
+        <div class="card">
+            <span style="font-size:0.75rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; letter-spacing:0.5px;">Current Role</span>
+            <h3 style="margin-top:5px;">Product / Program Manager - RBS Inventory Optimization & Planning (IOP)</h3>
+            <p style="font-weight:700; margin-bottom:10px;">Amazon | Bengaluru, India | Jun 2024 - Present</p>
+            <p>Own a portfolio of supply-chain network-efficiency products that reduce manual inventory transfers across Amazon's NA fulfillment network. Drive problem framing, entitlement sizing, BRD/PR-FAQ authoring, and cross-functional delivery with engineering, RBS Sciences, and FC operations.</p>
+            <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted); margin-top:10px;">
+                <li><strong>Manual Transfer Reduction (MTR):</strong> Lead portfolio of 7 defect-elimination initiatives with ~$180MM combined annual entitlement spanning force-binding, sortability, cross-dock, and reverse-logistics workflows.</li>
+                <li><strong>MTR Analytics Product:</strong> Took 0-to-1 an embedded AI agent product (PySpark → S3 → dashboard → LLM-assisted Q&A) enabling operators to query FC transfer data and surface defect root causes in plain language.</li>
+                <li><strong>Non-PID Conveyable (NPC):</strong> Defined and sized the NPC force-bind elimination initiative (~$58MM entitlement); designed shadow-mode evaluation framework for ML classification quality validation before enforcing catalog changes.</li>
+                <li><strong>Autonomous Defect Detection:</strong> Built logic across 4 categories (round-trip transfers, avoidable multi-hop, same-day in/out, ping-pong ASINs), turning model signals into measured product features.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Previous Amazon Role</span>
+            <h3 style="margin-top:5px;">AFBP Program Manager - RBS Availability / ASIN Productivity</h3>
+            <p style="font-weight:700; margin-bottom:10px;">Amazon | Bengaluru, India | Jun 2024 - 2025</p>
+            <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted); margin-top:10px;">
+                <li>Productized ML-driven recommendation logic to automate remediation of recurring catalog/availability defects, removing repeated manual operational handoffs.</li>
+                <li>Designed signal-driven product logic (deterministic rules + ML thresholds) and led engineering to convert raw data extracts into platform-ready inputs and reduce pipeline latency.</li>
+                <li>Built observability metrics (uptime, recovery time, false-positive rate) and ran experiments to tune automation safely before scaling.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Pre-Amazon Career</span>
+            <h3 style="margin-top:5px;">Senior Manager, R&D Product Development</h3>
+            <p style="font-weight:700; margin-bottom:10px;">Tata Motors | Pune, India | Aug 2018 - Jun 2022</p>
+            <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted); margin-top:10px;">
+                <li>Led cross-functional delivery of 10+ hardware/embedded subsystems for Tata Nexon and Altroz platforms, aligning engineering and testing to performance and regulatory standards.</li>
+                <li>Negotiated supplier transitions and optimized design workflows, delivering <strong>Rs.106 Cr (~$12.5M+) in cost savings</strong> across vehicle platforms.</li>
+                <li>Improved validation accuracy and cut rework by integrating CAE simulation with live test data under SAP/PLM governance.</li>
+            </ul>
+        </div>
+
+        <h2 style="margin:40px 0 20px 0; letter-spacing: -0.5px;">Core Skills & Expertise</h2>
+        <div class="grid-three">
+            <div class="card">
+                <h4 style="color:var(--accent-blue); margin-bottom:12px;">AI / Agentic Product</h4>
+                <p style="font-size:0.9rem;">Agentic & autonomous workflow automation • LLM / RAG product design • Generative-AI feature definition • Model evaluation & safety (precision/recall, shadow-mode validation) • Prompt workflows • AI-native PM tooling</p>
             </div>
-            <div class="card" style="padding: 15px; text-align: center; background: #f8f9fa;">
-                <strong>Data Analytics</strong>
-                <span style="font-size: 12px; color: #666;">SQL, ETL, Quicksight</span>
+            <div class="card">
+                <h4 style="color:var(--accent-blue); margin-bottom:12px;">Product Strategy</h4>
+                <p style="font-size:0.9rem;">0-to-1 Product Lifecycle • Product Strategy & Roadmapping • PR-FAQ / Working-Backwards / BRD • Experimentation & A/B Testing • Product Analytics • MVP definition • GTM</p>
             </div>
-            <div class="card" style="padding: 15px; text-align: center; background: #f8f9fa;">
-                <strong>Product Mgmt</strong>
-                <span style="font-size: 12px; color: #666;">Roadmap, Stakeholders</span>
+            <div class="card">
+                <h4 style="color:var(--accent-blue); margin-bottom:12px;">Technical & Data</h4>
+                <p style="font-size:0.9rem;">SQL • Python • PySpark • Data modeling • Metrics frameworks • AWS (Bedrock, SageMaker, S3, Lambda, Glue, Athena) • ETL pipelines</p>
             </div>
-            <div class="card" style="padding: 15px; text-align: center; background: #f8f9fa;">
-                <strong>Operations</strong>
-                <span style="font-size: 12px; color: #666;">Workflow Automation</span>
+            <div class="card">
+                <h4 style="color:var(--accent-blue); margin-bottom:12px;">Leadership</h4>
+                <p style="font-size:0.9rem;">Cross-functional leadership (engineering, science, design, ops) • Stakeholder alignment • Decision-making under ambiguity • Risk & incident management</p>
             </div>
         </div>
 
+        <h2 style="margin:40px 0 20px 0; letter-spacing: -0.5px;">Education & Achievements</h2>
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3 style="font-size:1.2rem; margin-bottom:15px;">Education</h3>
+                <div style="margin-bottom:20px;">
+                    <p style="font-weight:700; margin-bottom:4px;">MBA (PGP), Indian Institute of Management (IIM) Indore</p>
+                    <p style="font-size:0.85rem;">80.67% | 2024</p>
+                </div>
+                <div>
+                    <p style="font-weight:700; margin-bottom:4px;">B.Tech, Mechanical Engineering, NIT Agartala</p>
+                    <p style="font-size:0.85rem;">86.20% | 2018</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size:1.2rem; margin-bottom:15px;">Awards & Recognition</h3>
+                <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted);">
+                    <li>🏆 <strong>Best Summer Internship Project</strong>, IIM Indore (2024)</li>
+                    <li>🏆 <strong>Finalist, Amazon ACE</strong> (2023)</li>
+                    <li>🏆 Campus winner, <strong>Mondelez & Reliance case competitions</strong> (2023)</li>
+                    <li>🏆 <strong>Silver Award</strong>, Tata Motors - leadership & innovation (2021)</li>
+                    <li>🏆 <strong>State Math Olympiad</strong> - 2nd rank (2016)</li>
+                    <li>🏆 <strong>VAVE Ideation Award</strong> - 1,000+ ideas advanced to A-stage</li>
+                </ul>
+            </div>
+        </div>
     </main>
 
-    <footer style="text-align: center; padding: 40px; color: #999; font-size: 12px; margin-top: 40px; border-top: 1px solid #eee;">
-        &copy; 2026 Mainak Nath. All Rights Reserved.
+    <footer>
+        &copy; 2026 Mainak Nath. System blueprints built with clean, responsive constraints.
     </footer>
 
+    <script>
+        function switchTab(event, panelId) {
+            document.querySelectorAll('.tab-link').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            document.getElementById(panelId).classList.add('active');
+        }
+    </script>
 </body>
 </html>

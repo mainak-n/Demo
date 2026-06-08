@@ -2,66 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Availability GenAI | Mainak Nath</title>
-  <link rel="stylesheet" crossorigin href="/Demo/assets/style-BLLNt8WL.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI Availability Systems | Mainak Nath</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <a href="index.html" class="brand">Mainak<span>Nath</span></a>
-        <nav class="nav-links">
-            <a href="index.html">Work</a>
-            <a href="asin-productivity.html">ASIN Productivity</a>
-            <a href="sigma.html">SIGMA</a>
-            <a href="availability-genai.html" class="active">GenAI Ops</a>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="brand">Mainak<span>Nath</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Work</a>
+                <a href="profile.html">Profile</a>
+                <a href="asin-productivity.html">ASIN Productivity</a>
+                <a href="sigma.html">SIGMA</a>
+                <a href="availability-genai.html" class="active">GenAI Ops</a>
+            </nav>
+        </div>
     </header>
 
     <main class="container">
-        
-        <div style="margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-            <h1 style="color: var(--nav-bg); margin-bottom: 10px;">Fixing Availability at Scale (GenAI)</h1>
-            <div class="tags">
-                <span class="tag">Generative AI</span>
-                <span class="tag">Workflow Automation</span>
-                <span class="tag">Problem Framing</span>
-            </div>
+        <div class="card" style="margin-bottom: 40px;">
+            <span style="font-size:0.75rem; font-weight:700; color:var(--accent-cyan); text-transform:uppercase; letter-spacing:0.5px;">IOP CORE PRODUCT</span>
+            <h2 style="margin-top:10px;">MTR Analytics Portal: AI-Assisted Defect Diagnostics</h2>
+            <p style="font-size:0.95rem; margin-bottom:20px;">An autonomous product combining PySpark ETL pipelines, S3 data lakes, and LLM-powered natural language Q&A to enable operators to query Fulfillment Center transfer data and surface defect root causes in plain language, replacing manual analysis.</p>
+            <p><strong>Role:</strong> Led 0-to-1 product design, architecture, and cross-functional delivery with RBS Sciences, Engineering, and Operations.</p>
         </div>
 
-        <div class="grid" style="grid-template-columns: 2fr 1fr;">
-            
-            <div>
-                <h3>Problem Statement</h3>
-                <p>Customers and internal users faced frequent availability issues caused by upstream supply and data mismatches, resulting in lost revenue and massive manual operational overhead.</p>
-
-                <h3>Approach & Solution</h3>
-                <ul style="padding-left: 20px; line-height: 1.8;">
-                    <li><strong>GenAI Problem Framing:</strong> Converted ambiguous operational signals into structured GenAI-led problem statements. Led PRFAQ development to drive leadership alignment and funding.</li>
-                    <li><strong>Signal Logic Design:</strong> Designed logic combining deterministic rules and ML thresholds to automate issue classification and remediation.</li>
-                    <li><strong>Engineering Leadership:</strong> Defined schemas and ingestion requirements, translating raw extracts into scalable production workflows.</li>
-                    <li><strong>Observability:</strong> Built dashboards (MTTR, uptime, false positives) and ran experiments to guide safe automation.</li>
-                </ul>
-            </div>
+        <div class="dashboard-grid">
 
             <div>
                 <div class="card">
-                    <h4>Business Impact</h4>
-                    <div style="margin-bottom: 15px;">
-                        <span class="impact-number">$75M</span>
-                        <span class="impact-label">Annual Revenue Impact</span>
+                    <div class="tags">
+                        <span class="tag">LLM Integration</span>
+                        <span class="tag">Generative AI</span>
+                        <span class="tag">Automated Diagnostics</span>
+                        <span class="tag">Data Pipeline</span>
+                        <span class="tag highlight">Autonomous Agents</span>
                     </div>
-                    <div style="margin-bottom: 15px;">
-                        <span class="impact-number">95K+</span>
-                        <span class="impact-label">Incidents Automated</span>
+                    <h2 style="margin-top:15px;">System Architecture</h2>
+                    <p>Standardizes operational anomaly detection by passing FC transfer diagnostic streams through LLM-powered reasoning and validation filters, eliminating manual case-by-case review bottlenecks.</p>
+
+                    <h3 style="margin-top:25px;">Core Technical Components</h3>
+                    <div class="kpi-card blue" style="margin:15px 0;">
+                        <strong>Data Pipeline: Raw Transfer → Insights</strong>
+                        <p style="font-size:0.85rem; margin-top:8px;">PySpark ETL jobs extract FC transfer records from operational data sources, aggregate by defect patterns, and stage in S3 data lakes for LLM ingestion.</p>
                     </div>
-                    <div>
-                        <span class="impact-number">80%</span>
-                        <span class="impact-label">Reduced Pipeline Latency</span>
+                    <div class="kpi-card cyan" style="margin:15px 0; border-left-color:var(--accent-cyan);">
+                        <strong>LLM Semantic Understanding</strong>
+                        <p style="font-size:0.85rem; margin-top:8px;">Large language model converts complex infrastructure diagnostic signals into formatted narrative insights, enabling operators to query data in natural language.</p>
                     </div>
+                    <div class="kpi-card blue" style="margin:15px 0;">
+                        <strong>Hybrid Decision Engine</strong>
+                        <p style="font-size:0.85rem; margin-top:8px;">Pairs deterministic business constraints (e.g., facility capacity rules) with dynamic ML thresholds to route autonomous remediation actions safely and securely.</p>
+                    </div>
+
+                    <h3 style="margin-top:25px;">Product Experience</h3>
+                    <p>Operators can ask questions like:</p>
+                    <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted); margin-top:10px;">
+                        <li><em>"What are the top 5 root causes of manual transfers this week across FC North?"</em></li>
+                        <li><em>"Which SKUs have ping-pong behavior in the last 30 days?"</em></li>
+                        <li><em>"Show me same-day in/out patterns for this region."</em></li>
+                    </ul>
+                    <p style="font-size:0.9rem; color:var(--text-muted); margin-top:12px;">The agent interprets natural language, queries the processed transfer dataset, and surfaces structured insights with recommended remediation actions.</p>
+
+                    <h3 style="margin-top:25px;">Key Achievements</h3>
+                    <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted); margin-top:15px;">
+                        <li><strong>0-to-1 Delivery:</strong> Designed, scoped, and launched MVP product from concept to operations in 6 months.</li>
+                        <li><strong>Hybrid Logic:</strong> Architected signal-driven logic combining deterministic rules + ML thresholds for safe autonomous action.</li>
+                        <li><strong>Cross-Functional Alignment:</strong> Drove alignment across RBS Sciences, Engineering, FOS, AFT, and SCE stakeholders to unblock pilots.</li>
+                        <li><strong>Evaluation Framework:</strong> Designed shadow-mode testing and precision/recall confusion matrix validation before enforcing automated decisions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" style="background: linear-gradient(135deg, var(--accent-cyan) 0%, #0891b2 50%, var(--primary-dark) 100%); color: #FFF;">
+                    <h4 style="color:#FFF; text-transform:uppercase; font-size:0.8rem; letter-spacing:0.5px;">Verified Operations</h4>
+                    <div class="kpi-container" style="grid-template-columns:1fr; margin-top:20px;">
+                        <div>
+                            <span class="kpi-num" style="color:var(--accent-blue); font-size:2.5rem;">$75M</span>
+                            <span class="kpi-label" style="color:#d0d7de;">Annual Revenue Recovered</span>
+                        </div>
+                        <hr style="border:0; border-top:1px solid rgba(255,255,255,0.18); margin:20px 0;">
+                        <div>
+                            <span class="kpi-num" style="color:#06b6d4; font-size:2.5rem;">95K+</span>
+                            <span class="kpi-label" style="color:#d0d7de;">Autonomous Ticket Closures</span>
+                        </div>
+                        <hr style="border:0; border-top:1px solid rgba(255,255,255,0.2); margin:20px 0;">
+                        <div>
+                            <span class="kpi-num" style="color:#10b981; font-size:2rem;">72h</span>
+                            <span class="kpi-label" style="color:#d0d7de;">Average Resolution Time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h4 style="color:var(--accent-cyan); margin-bottom:15px;">Tech Stack</h4>
+                    <div class="tags">
+                        <span class="tag">AWS Lambda</span>
+                        <span class="tag">Amazon SageMaker</span>
+                        <span class="tag">LLM APIs</span>
+                        <span class="tag">PySpark</span>
+                        <span class="tag">S3 Data Lakes</span>
+                        <span class="tag">AWS Glue</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h4 style="color:var(--accent-cyan); margin-bottom:15px;">PM Competencies Demonstrated</h4>
+                    <div class="tags">
+                        <span class="tag">AI Product Strategy</span>
+                        <span class="tag">Autonomous Workflows</span>
+                        <span class="tag">Model Evaluation</span>
+                        <span class="tag">Safety Frameworks</span>
+                        <span class="tag">0-to-1 Delivery</span>
+                        <span class="tag highlight">LLM Integration</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h4 style="color:var(--primary-dark); margin-bottom:12px;">Related Experience</h4>
+                    <p style="font-size:0.85rem; margin-bottom:12px;">This project demonstrates core AI/PM skills from resume:</p>
+                    <ul style="padding-left:18px; font-size:0.85rem; color:var(--text-muted);">
+                        <li><strong>Agentic & autonomous workflow automation:</strong> LLM agent autonomously diagnoses and routes remediation</li>
+                        <li><strong>Model evaluation & safety:</strong> Shadow-mode validation before production enforcement</li>
+                        <li><strong>Prompt workflows:</strong> Natural language Q&A interface design</li>
+                        <li><strong>Cross-functional leadership:</strong> Alignment across Science, Eng, Ops teams</li>
+                    </ul>
                 </div>
             </div>
 
         </div>
     </main>
+
+    <footer>
+        &copy; 2026 Mainak Nath. Operations scaled through autonomous LLM-assisted diagnostics and decision-making.
+    </footer>
+
 </body>
 </html>
