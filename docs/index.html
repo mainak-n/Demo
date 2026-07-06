@@ -43,40 +43,43 @@
         <h2 style="margin-bottom:15px; letter-spacing: -0.5px;">Core Production Repositories</h2>
         <div class="card" style="padding:20px;">
             <div class="tabs-header">
-                <button class="tab-link active" onclick="switchTab(event, 'bot-panel')">AI Knowledge Assistant</button>
+                <button class="tab-link active" onclick="switchTab(event, 'causal-panel')">Causal Inference Portal</button>
+                <button class="tab-link" onclick="switchTab(event, 'bot-panel')">AI Knowledge Assistant</button>
                 <button class="tab-link" onclick="switchTab(event, 'copilot-panel')">Contoso Copilot Agent</button>
-                <button class="tab-link" onclick="switchTab(event, 'causal-panel')">Causal Inference Portal</button>
                 <button class="tab-link" onclick="switchTab(event, 'document-panel')">Document Intelligence Platform</button>
             </div>
 
-            <div id="bot-panel" class="tab-panel active">
+            <div id="causal-panel" class="tab-panel active">
                 <div class="tags">
-                    <span class="tag">Google Gemini AI</span>
-                    <span class="tag">LangChain</span>
-                    <span class="tag">FAISS</span>
-                    <span class="tag">Flask</span>
-                    <span class="tag">Python 3.11</span>
-                    <span class="tag highlight">Render Web Service</span>
+                    <span class="tag">EconML (Microsoft)</span>
+                    <span class="tag">Streamlit Runtime</span>
+                    <span class="tag">Double ML</span>
+                    <span class="tag">Statsmodels</span>
                 </div>
-                <h3>Cloud-Native Document Reasoning Bot (Telegram Integration)</h3>
-                <p>An intelligent, context-aware routing assistant that transforms static organizational PDFs into live search environments. Builds vector lookup structures directly on the runtime instance upon startup initialization.</p>
+                <h3>No-Code Strategic Causal Impact Portal</h3>
+                <p>Isolates true program impact from confounding observational datasets. The terminal dynamically adjusts execution routing logic based on temporal parameters provided during file initialization.</p>
                 
-                <div class="responsive-asset-container">
-                    <div class="responsive-img-wrapper">
-                        <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:5px;">SYSTEM ARCHITECTURE</p>
-                        <img src="https://raw.githubusercontent.com/mainak-n/rag-project/main/public/architecture.jpg" alt="System Architecture">
-                    </div>
-                    <div class="responsive-img-wrapper">
-                        <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:5px;">SCAN TO CHAT</p>
-                        <img src="https://raw.githubusercontent.com/mainak-n/rag-project/main/public/Instagram_bot.jpeg" alt="Bot QR Code">
-                    </div>
+                <div class="responsive-img-wrapper" style="margin:20px 0; background:#F8F9FA;">
+                    <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:8px;">EXPERIMENT SNAPSHOT</p>
+                    <img src="https://raw.githubusercontent.com/mainak-n/causal-Inference-ml/main/Screenshot%202026-07-07%20012922.png" alt="Causal inference portal experiment results screenshot">
+                    <p style="font-size:0.85rem; color:var(--text-muted); margin-top:10px;">The portal surfaces cohort-level treatment effects and local outcome diagnostics from observational data.</p>
                 </div>
 
-                <h4>Knowledge Base Capabilities</h4>
-                <p>Pre-trained on modular operational records including Leave Policies, SOP compliance layouts, and the comprehensive <strong>M365 Agentic API Developer Guide</strong>.</p>
-                
-                <div style="margin-top:15px;">
-                    <span style="font-size:0.85rem; font-weight:700; color:var(--accent-blue);">Live Telegram Handles: @test_rag_mainak_bot</span>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Operational Configuration</th><th>Statistical Pipeline Routine</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Cross-Sectional Framework (Time Logic OFF)</td><td>Executes Robinson's Two-Stage Procedure utilizing causal random forests to isolate residual treatment effects.</td></tr>
+                            <tr><td>Panel Framework (Time Logic ON)</td><td>Builds an OLS trend framework checking linear baseline constraints dynamically across defined cohorts.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cta-stack" style="margin-top:20px;">
+                    <a href="#" class="btn btn-secondary" onclick="downloadCsv(event)">Download Demo CSV</a>
+                    <a href="https://causal-inference-ml.streamlit.app/" target="_blank" class="btn">Launch Live Analytics Portal</a>
                 </div>
             </div>
 
@@ -113,37 +116,34 @@
                 </div>
             </div>
 
-            <div id="causal-panel" class="tab-panel">
+            <div id="bot-panel" class="tab-panel">
                 <div class="tags">
-                    <span class="tag">EconML (Microsoft)</span>
-                    <span class="tag">Streamlit Runtime</span>
-                    <span class="tag">Double ML</span>
-                    <span class="tag">Statsmodels</span>
+                    <span class="tag">Google Gemini AI</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">FAISS</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Python 3.11</span>
+                    <span class="tag highlight">Render Web Service</span>
                 </div>
-                <h3>No-Code Strategic Causal Impact Portal</h3>
-                <p>Isolates true program impact from confounding observational datasets. The terminal dynamically adjusts execution routing logic based on temporal parameters provided during file initialization.</p>
+                <h3>Cloud-Native Document Reasoning Bot (Telegram Integration)</h3>
+                <p>An intelligent, context-aware routing assistant that transforms static organizational PDFs into live search environments. Builds vector lookup structures directly on the runtime instance upon startup initialization.</p>
                 
-                <div class="responsive-img-wrapper" style="margin:20px 0; background:#F8F9FA;">
-                    <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:8px;">EXPERIMENT SNAPSHOT</p>
-                    <img src="https://raw.githubusercontent.com/mainak-n/causal-Inference-ml/main/Screenshot%202026-07-07%20012922.png" alt="Causal inference portal experiment results screenshot">
-                    <p style="font-size:0.85rem; color:var(--text-muted); margin-top:10px;">The portal surfaces cohort-level treatment effects and local outcome diagnostics from observational data.</p>
+                <div class="responsive-asset-container">
+                    <div class="responsive-img-wrapper">
+                        <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:5px;">SYSTEM ARCHITECTURE</p>
+                        <img src="https://raw.githubusercontent.com/mainak-n/rag-project/main/public/architecture.jpg" alt="System Architecture">
+                    </div>
+                    <div class="responsive-img-wrapper">
+                        <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:5px;">SCAN TO CHAT</p>
+                        <img src="https://raw.githubusercontent.com/mainak-n/rag-project/main/public/Instagram_bot.jpeg" alt="Bot QR Code">
+                    </div>
                 </div>
 
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr><th>Operational Configuration</th><th>Statistical Pipeline Routine</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Cross-Sectional Framework (Time Logic OFF)</td><td>Executes Robinson's Two-Stage Procedure utilizing causal random forests to isolate residual treatment effects.</td></tr>
-                            <tr><td>Panel Framework (Time Logic ON)</td><td>Builds an OLS trend framework checking linear baseline constraints dynamically across defined cohorts.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="cta-stack" style="margin-top:20px;">
-                    <a href="#" class="btn btn-secondary" onclick="downloadCsv(event)">Open Demo CSV</a>
-                    <a href="https://causal-inference-ml.streamlit.app/" target="_blank" class="btn">Launch Live Analytics Portal</a>
+                <h4>Knowledge Base Capabilities</h4>
+                <p>Pre-trained on modular operational records including Leave Policies, SOP compliance layouts, and the comprehensive <strong>M365 Agentic API Developer Guide</strong>.</p>
+                
+                <div style="margin-top:15px;">
+                    <span style="font-size:0.85rem; font-weight:700; color:var(--accent-blue);">Live Telegram Handles: @test_rag_mainak_bot</span>
                 </div>
             </div>
 
@@ -176,7 +176,6 @@
 
                 <div style="margin-top:20px;">
                     <a href="https://document-summarise.streamlit.app/" target="_blank" class="btn">Launch Document Intelligence Platform</a>
-                    <a href="https://github.com/mainak-n/document_summariser" target="_blank" class="btn btn-secondary">View GitHub Repository</a>
                 </div>
             </div>
         </div>
