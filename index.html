@@ -11,12 +11,16 @@
     <header>
         <div class="nav-container">
             <a href="index.html" class="brand">Mainak<span>Nath</span></a>
-            <nav class="nav-links">
-                <a href="index.html" class="active">Work</a>
-                <a href="profile.html">Profile</a>
-                <a href="asin-productivity.html">ASIN Productivity</a>
-                <a href="sigma.html">SIGMA</a>
-                <a href="availability-genai.html">GenAI Ops</a>
+            <div class="nav-center">
+                <nav class="nav-links nav-links-center">
+                    <a href="index.html" class="active nav-pill">Work</a>
+                    <a href="profile.html" class="nav-pill">Profile</a>
+                </nav>
+            </div>
+            <nav class="nav-links nav-links-side">
+                <a href="asin-productivity.html" class="nav-pill">ASIN Productivity</a>
+                <a href="sigma.html" class="nav-pill">SIGMA</a>
+                <a href="availability-genai.html" class="nav-pill">GenAI Ops</a>
             </nav>
         </div>
     </header>
@@ -42,6 +46,7 @@
                 <button class="tab-link active" onclick="switchTab(event, 'bot-panel')">AI Knowledge Assistant</button>
                 <button class="tab-link" onclick="switchTab(event, 'copilot-panel')">Contoso Copilot Agent</button>
                 <button class="tab-link" onclick="switchTab(event, 'causal-panel')">Causal Inference Portal</button>
+                <button class="tab-link" onclick="switchTab(event, 'document-panel')">Document Intelligence Platform</button>
             </div>
 
             <div id="bot-panel" class="tab-panel active">
@@ -118,11 +123,10 @@
                 <h3>No-Code Strategic Causal Impact Portal</h3>
                 <p>Isolates true program impact from confounding observational datasets. The terminal dynamically adjusts execution routing logic based on temporal parameters provided during file initialization.</p>
                 
-                <div class="card" style="background:#F8F9FA; margin:20px 0;">
-                    <h4>Mathematical Framework (Time Logic Enabled)</h4>
-                    <p>Calculates intervention variances using the Difference-in-Differences panel regression methodology:</p>
-                    <pre class="math-equation">$$Y = \beta_0 + \beta_1(\text{Treat}) + \beta_2(\text{Post}) + \delta(\text{Treat} \times \text{Post}) + \gamma X + \epsilon$$</pre>
-                    <p style="font-size:0.8rem; margin-top:5px;">Where $\delta$ represents the true mathematical coefficient estimation corrected for omitted context factors.</p>
+                <div class="responsive-img-wrapper" style="margin:20px 0; background:#F8F9FA;">
+                    <p style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:8px;">EXPERIMENT SNAPSHOT</p>
+                    <img src="https://raw.githubusercontent.com/mainak-n/causal-Inference-ml/main/Screenshot%202026-07-07%20012922.png" alt="Causal inference portal experiment results screenshot">
+                    <p style="font-size:0.85rem; color:var(--text-muted); margin-top:10px;">The portal surfaces cohort-level treatment effects and local outcome diagnostics from observational data.</p>
                 </div>
 
                 <div class="table-wrapper">
@@ -137,94 +141,47 @@
                     </table>
                 </div>
 
-                <div style="margin-top:20px;">
+                <div class="cta-stack" style="margin-top:20px;">
+                    <a href="#" class="btn btn-secondary" onclick="downloadCsv(event)">Open Demo CSV</a>
                     <a href="https://causal-inference-ml.streamlit.app/" target="_blank" class="btn">Launch Live Analytics Portal</a>
                 </div>
             </div>
-        </div>
 
-        <h2 style="margin:40px 0 20px 0; letter-spacing: -0.5px;">Career Timeline</h2>
-
-        <div class="card">
-            <span style="font-size:0.75rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; letter-spacing:0.5px;">Current Role</span>
-            <h3 style="margin-top:5px;">Product / Program Manager - RBS Inventory Optimization & Planning (IOP)</h3>
-            <p style="font-weight:700; margin-bottom:10px;">Amazon | Bengaluru, India | Jun 2024 - Present</p>
-            <p>Own a portfolio of supply-chain network-efficiency products that reduce manual inventory transfers across Amazon's NA fulfillment network. Drive problem framing, entitlement sizing, BRD/PR-FAQ authoring, and cross-functional delivery with engineering, RBS Sciences, and FC operations.</p>
-            <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted); margin-top:10px;">
-                <li><strong>Manual Transfer Reduction (MTR):</strong> Lead portfolio of 7 defect-elimination initiatives with ~$180MM combined annual entitlement spanning force-binding, sortability, cross-dock, and reverse-logistics workflows.</li>
-                <li><strong>MTR Analytics Product:</strong> Took 0-to-1 an embedded AI agent product (PySpark → S3 → dashboard → LLM-assisted Q&A) enabling operators to query FC transfer data and surface defect root causes in plain language.</li>
-                <li><strong>Non-PID Conveyable (NPC):</strong> Defined and sized the NPC force-bind elimination initiative (~$58MM entitlement); designed shadow-mode evaluation framework for ML classification quality validation before enforcing catalog changes.</li>
-                <li><strong>Autonomous Defect Detection:</strong> Built logic across 4 categories (round-trip transfers, avoidable multi-hop, same-day in/out, ping-pong ASINs), turning model signals into measured product features.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Previous Amazon Role</span>
-            <h3 style="margin-top:5px;">AFBP Program Manager - RBS Availability / ASIN Productivity</h3>
-            <p style="font-weight:700; margin-bottom:10px;">Amazon | Bengaluru, India | Jun 2024 - 2025</p>
-            <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted); margin-top:10px;">
-                <li>Productized ML-driven recommendation logic to automate remediation of recurring catalog/availability defects, removing repeated manual operational handoffs.</li>
-                <li>Designed signal-driven product logic (deterministic rules + ML thresholds) and led engineering to convert raw data extracts into platform-ready inputs and reduce pipeline latency.</li>
-                <li>Built observability metrics (uptime, recovery time, false-positive rate) and ran experiments to tune automation safely before scaling.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Pre-Amazon Career</span>
-            <h3 style="margin-top:5px;">Senior Manager, R&D Product Development</h3>
-            <p style="font-weight:700; margin-bottom:10px;">Tata Motors | Pune, India | Aug 2018 - Jun 2022</p>
-            <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted); margin-top:10px;">
-                <li>Led cross-functional delivery of 10+ hardware/embedded subsystems for Tata Nexon and Altroz platforms, aligning engineering and testing to performance and regulatory standards.</li>
-                <li>Negotiated supplier transitions and optimized design workflows, delivering <strong>Rs.106 Cr (~$12.5M+) in cost savings</strong> across vehicle platforms.</li>
-                <li>Improved validation accuracy and cut rework by integrating CAE simulation with live test data under SAP/PLM governance.</li>
-            </ul>
-        </div>
-
-        <h2 style="margin:40px 0 20px 0; letter-spacing: -0.5px;">Core Skills & Expertise</h2>
-        <div class="grid-three">
-            <div class="card">
-                <h4 style="color:var(--accent-blue); margin-bottom:12px;">AI / Agentic Product</h4>
-                <p style="font-size:0.9rem;">Agentic & autonomous workflow automation • LLM / RAG product design • Generative-AI feature definition • Model evaluation & safety (precision/recall, shadow-mode validation) • Prompt workflows • AI-native PM tooling</p>
-            </div>
-            <div class="card">
-                <h4 style="color:var(--accent-blue); margin-bottom:12px;">Product Strategy</h4>
-                <p style="font-size:0.9rem;">0-to-1 Product Lifecycle • Product Strategy & Roadmapping • PR-FAQ / Working-Backwards / BRD • Experimentation & A/B Testing • Product Analytics • MVP definition • GTM</p>
-            </div>
-            <div class="card">
-                <h4 style="color:var(--accent-blue); margin-bottom:12px;">Technical & Data</h4>
-                <p style="font-size:0.9rem;">SQL • Python • PySpark • Data modeling • Metrics frameworks • AWS (Bedrock, SageMaker, S3, Lambda, Glue, Athena) • ETL pipelines</p>
-            </div>
-            <div class="card">
-                <h4 style="color:var(--accent-blue); margin-bottom:12px;">Leadership</h4>
-                <p style="font-size:0.9rem;">Cross-functional leadership (engineering, science, design, ops) • Stakeholder alignment • Decision-making under ambiguity • Risk & incident management</p>
-            </div>
-        </div>
-
-        <h2 style="margin:40px 0 20px 0; letter-spacing: -0.5px;">Education & Achievements</h2>
-        <div class="dashboard-grid">
-            <div class="card">
-                <h3 style="font-size:1.2rem; margin-bottom:15px;">Education</h3>
-                <div style="margin-bottom:20px;">
-                    <p style="font-weight:700; margin-bottom:4px;">MBA (PGP), Indian Institute of Management (IIM) Indore</p>
-                    <p style="font-size:0.85rem;">80.67% | 2024</p>
+            <div id="document-panel" class="tab-panel">
+                <div class="tags">
+                    <span class="tag">RAG</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">FAISS</span>
+                    <span class="tag">Google Gemini</span>
+                    <span class="tag">Gemma 3</span>
+                    <span class="tag highlight">PDF Intelligence</span>
                 </div>
-                <div>
-                    <p style="font-weight:700; margin-bottom:4px;">B.Tech, Mechanical Engineering, NIT Agartala</p>
-                    <p style="font-size:0.85rem;">86.20% | 2018</p>
+                <h3>Document Intelligence Platform</h3>
+                <p>The Document Intelligence Platform is a professional research tool that uses Retrieval-Augmented Generation (RAG) to analyze PDF documents. It creates a local vector database of uploaded content to provide accurate, context-aware answers to natural language queries.</p>
+                <p style="margin-top:12px; font-size:0.93rem; color:var(--accent-blue); font-weight:600;">Note: For testing, upload a 3–5 page PDF. Since this is a free portal, larger or very long documents may slow down the system or cause it to crash.</p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Capability</th><th>Implementation Detail</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Data Ingestion</td><td>Reads PDF files and only processes documents with more than 5 pages into the knowledge base.</td></tr>
+                            <tr><td>Text Processing</td><td>Splits content into overlapping chunks to preserve context relationships during retrieval.</td></tr>
+                            <tr><td>Vector Indexing</td><td>Uses Google text-embedding models and a FAISS database for semantic retrieval.</td></tr>
+                            <tr><td>Response Generation</td><td>Uses the Gemma 3 model to synthesize answers with source citations.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top:20px;">
+                    <a href="https://document-summarise.streamlit.app/" target="_blank" class="btn">Launch Document Intelligence Platform</a>
+                    <a href="https://github.com/mainak-n/document_summariser" target="_blank" class="btn btn-secondary">View GitHub Repository</a>
                 </div>
             </div>
-            <div class="card">
-                <h3 style="font-size:1.2rem; margin-bottom:15px;">Awards & Recognition</h3>
-                <ul style="padding-left:18px; font-size:0.9rem; color:var(--text-muted);">
-                    <li>🏆 <strong>Best Summer Internship Project</strong>, IIM Indore (2024)</li>
-                    <li>🏆 <strong>Finalist, Amazon ACE</strong> (2023)</li>
-                    <li>🏆 Campus winner, <strong>Mondelez & Reliance case competitions</strong> (2023)</li>
-                    <li>🏆 <strong>Silver Award</strong>, Tata Motors - leadership & innovation (2021)</li>
-                    <li>🏆 <strong>State Math Olympiad</strong> - 2nd rank (2016)</li>
-                    <li>🏆 <strong>VAVE Ideation Award</strong> - 1,000+ ideas advanced to A-stage</li>
-                </ul>
-            </div>
         </div>
+
+
     </main>
 
     <footer>
@@ -237,6 +194,28 @@
             document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
             event.currentTarget.classList.add('active');
             document.getElementById(panelId).classList.add('active');
+        }
+
+        function downloadCsv(event) {
+            event.preventDefault();
+            const url = 'https://raw.githubusercontent.com/mainak-n/causal-Inference-ml/main/positive_impact_data.csv';
+            fetch(url)
+                .then((response) => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.blob();
+                })
+                .then((blob) => {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = 'positive_impact_data.csv';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(link.href);
+                })
+                .catch(() => {
+                    window.open(url, '_blank');
+                });
         }
     </script>
 </body>
