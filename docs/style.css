@@ -1,21 +1,21 @@
 /* --- GLOBAL DESIGN SYSTEM --- */
 :root {
-    --primary-dark: #0b1f3f;
-    --surface-dark: #122941;
-    --accent-orange: #2498ff;
-    --accent-blue: #2498ff;
-    --accent-purple: #7c5cf5;
-    --accent-cyan: #38d7e4;
-    --text-primary: #0f1d34;
-    --text-muted: #6b7a8d;
-    --bg-main: #eff5fb;
+    --primary-dark: #202124;
+    --surface-dark: #ffffff;
+    --accent-orange: #fbbc04;
+    --accent-blue: #1a73e8;
+    --accent-purple: #9334e6;
+    --accent-cyan: #34a853;
+    --text-primary: #202124;
+    --text-muted: #5f6368;
+    --bg-main: #f8f9fa;
     --bg-card: #ffffff;
-    --border-color: #c8d4e4;
+    --border-color: #dadce0;
     --radius: 14px;
-    --shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 6px 18px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
-    --font-system: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    --font-heading: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --font-system: "Roboto", "Segoe UI", Arial, sans-serif;
+    --font-heading: "Roboto", "Segoe UI", Arial, sans-serif;
     --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Menlo, monospace;
 }
 
@@ -67,8 +67,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(36, 152, 255, 0.2);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
     backdrop-filter: blur(10px);
 }
 
@@ -83,15 +83,11 @@ header {
 
 .brand {
     font-family: var(--font-heading);
-    color: #ffffff;
+    color: var(--text-primary);
     font-size: 1.45rem;
     font-weight: 800;
     text-decoration: none;
     letter-spacing: -0.5px;
-    background: linear-gradient(135deg, #e5f5ff 0%, #b7d8ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     justify-self: start;
 }
 
@@ -122,7 +118,7 @@ header {
 }
 
 .nav-links a {
-    color: #b0b9c3;
+    color: var(--text-muted);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -133,42 +129,55 @@ header {
 }
 
 .nav-links a:hover {
-    color: #ffffff;
-    background-color: rgba(36, 152, 255, 0.12);
+    color: var(--accent-blue);
+    background-color: rgba(26, 115, 232, 0.08);
 }
 
 .nav-links a.active {
-    color: #ffffff;
-    background-color: rgba(36, 152, 255, 0.18);
+    color: var(--accent-blue);
+    background-color: rgba(26, 115, 232, 0.08);
     border-bottom: 2px solid var(--accent-blue);
 }
 
 .nav-links a.nav-pill {
-    color: #ffffff;
-    background: rgba(36, 152, 255, 0.12);
-    border: 1px solid rgba(36, 152, 255, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    color: var(--text-primary);
+    background: #f8f9fa;
+    border: 1px solid var(--border-color);
+    box-shadow: none;
 }
 
 .nav-links a.nav-pill:hover {
-    color: #ffffff;
-    background: rgba(36, 152, 255, 0.2);
-    border-color: rgba(56, 215, 228, 0.3);
+    color: var(--accent-blue);
+    background: #f1f3f4;
+    border-color: rgba(26, 115, 232, 0.2);
 }
 
 .nav-links a.nav-pill.active {
-    background: linear-gradient(135deg, rgba(36, 152, 255, 0.24), rgba(56, 215, 228, 0.16));
-    border-color: rgba(56, 215, 228, 0.3);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    background: rgba(26, 115, 232, 0.08);
+    color: var(--accent-blue);
+    border-color: rgba(26, 115, 232, 0.2);
+    box-shadow: none;
+}
+
+.nav-links-side a.nav-pill {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    opacity: 0.9;
+    background: transparent;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.nav-links-side a.nav-pill:hover {
+    background: #f1f3f4;
 }
 
 /* --- EXECUTIVE HERO --- */
 .hero {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, #132a48 40%, #0c3458 100%);
-    color: #ffffff;
+    background: linear-gradient(135deg, #e8f0fe 0%, #f8fbff 45%, #ffffff 100%);
+    color: var(--text-primary);
     padding: 50px 20px;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
 }
@@ -196,7 +205,7 @@ header {
 }
 
 .hero h1 {
-    color: #ffffff;
+    color: var(--text-primary);
     font-size: 2.35rem;
     margin-bottom: 10px;
     letter-spacing: -0.02em;
@@ -206,7 +215,7 @@ header {
 
 .hero p,
 .hero-subtitle {
-    color: #a0aab0;
+    color: var(--text-muted);
     max-width: 760px;
     margin: 0 auto 16px auto;
     font-size: 1.05rem;
@@ -242,7 +251,7 @@ header {
 }
 
 .contact-meta a:hover {
-    color: #d6f5ff;
+    color: var(--accent-blue);
     text-decoration: underline;
 }
 
