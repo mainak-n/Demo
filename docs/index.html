@@ -47,6 +47,7 @@
                 <button class="tab-link" onclick="switchTab(event, 'bot-panel')">AI Knowledge Assistant</button>
                 <button class="tab-link" onclick="switchTab(event, 'copilot-panel')">Contoso Copilot Agent</button>
                 <button class="tab-link" onclick="switchTab(event, 'document-panel')">Document Intelligence Platform</button>
+                <button class="tab-link" onclick="switchTab(event, 'vibecheck-panel')">VibeCheck</button>
             </div>
 
             <div id="causal-panel" class="tab-panel active">
@@ -176,6 +177,28 @@
 
                 <div style="margin-top:20px;">
                     <a href="https://document-summarise.streamlit.app/" target="_blank" class="btn">Launch Document Intelligence Platform</a>
+                </div>
+            </div>
+
+            <div id="vibecheck-panel" class="tab-panel">
+                <div class="tags">
+                    <span class="tag">Android App</span>
+                    <span class="tag">Mobile UX</span>
+                    <span class="tag">Product Demo</span>
+                    <span class="tag highlight">Playable Demo</span>
+                </div>
+                <h3>VibeCheck</h3>
+                <p>VibeCheck is a mobile-first product experience focused on delivering a polished app demo with a clear product story and user flow. The embedded video below lets you preview the experience directly in the portfolio.</p>
+
+                <div style="margin:20px 0;">
+                    <video controls preload="metadata" style="width:100%; max-width:900px; border-radius:12px; background:#000;">
+                        <source src="https://github.com/mainak-n/VibeCheck/blob/master/vive_check_android_app.mp4?raw=true" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div style="margin-top:20px;">
+                    <a href="https://github.com/mainak-n/VibeCheck" target="_blank" class="btn">View GitHub Repository</a>
                 </div>
             </div>
         </div>
